@@ -4,8 +4,8 @@ public class Pokemon {
     public String name;
     public String height;
     public String weight;
-    public String attack;
-    public String sp;
+   // public String attack;
+   // public String sp;
     public Sprite sprites;
 
 }

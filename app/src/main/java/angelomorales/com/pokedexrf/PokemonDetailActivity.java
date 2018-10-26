@@ -19,6 +19,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
 public class PokemonDetailActivity extends AppCompatActivity{
 
     private TextView mNameTextView;
@@ -42,6 +43,7 @@ public class PokemonDetailActivity extends AppCompatActivity{
         //mSPTextView = (TextView)findViewById(R.id.pokemon_sp);
         mImageView = (ImageView)findViewById(R.id.pokemon_photo);
 
+       // Retrofit retrofit = new Retrofit.Builder().baseUrl("http://pokeapi.co/pokemon/").addConverterFactory(GsonConverterFactory.create()).build();
         GetPokemonClientService service = PokemonClientReference.getRetrofitInstance().create(GetPokemonClientService.class);
         Call<Pokemon> call = service.getPokemon(pokemonName);
 
