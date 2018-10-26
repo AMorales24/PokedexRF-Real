@@ -22,6 +22,8 @@ public class PokemonListActivity extends AppCompatActivity {
 
         pokemonList.add("pikachu");
         pokemonList.add("bulbasaur");
+        pokemonList.add("charizard");
+        pokemonList.add("gengar");
         pokemonList.add("haunter");
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.poke_recyclerview);
